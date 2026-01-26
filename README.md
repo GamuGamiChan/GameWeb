@@ -1,5 +1,8 @@
 # GameWeb
 
+> [!WARNING]
+> This is not being actively maintained anymore.
+
 Source code for https://thapat.me. Written using Bootstrap Studio.
 
 Powered by GitHub Pages and Cloudflare Pages for PR previews.
