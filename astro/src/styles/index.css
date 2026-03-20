@@ -24,7 +24,7 @@ body {
 
 
 .accent {
-    color: var(--about-accent)
+    color: var(--about-accent);
 }
 
 .comment {
