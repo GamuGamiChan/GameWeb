@@ -1,0 +1,22 @@
+---
+interface Props {
+  title?: string;
+  link?: string;
+  img: string;
+}
+
+const { title, link, img } = Astro.props;
+---
+
+<style>
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+}
+</style>
+
+<a href={link} title={title} rel="nofollow">
+    <img src={img} alt={title} width="88" height="31"/>
+</a>
