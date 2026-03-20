@@ -1,12 +1,23 @@
 ---
 import "../styles/index.css";
 import Socials from "../components/socials.astro";
+import Webrings from "../components/webrings.astro";
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    name="description"
+    content="Game's personal site — projects, socials, and random internet stuff."
+    />
+    <meta property="og:title" content="Game's Personal Site" />
+    <meta property="og:description" content="Projects, socials, and random internet stuff." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thapat.me/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
     <title>Game's Personal Site</title>
   </head>
   <body>
@@ -22,11 +33,11 @@ import Socials from "../components/socials.astro";
         This site is very barebone so far, but I plan to add more content in the future, maybe? I have no idea.
       </p>
       <p>
-        If you're looking for the old website that I had before, you can find it on <a href="https://thapat.me/archive" class="accent">the "archive" directory</a>. Note that css and other stuff is fully borked if you're running local and I'm not planning to fix it, so enjoy the nostalgia of a 2010s pain and misery if you're poking it :p
+        If you're looking for the old website that I had before, you can find it on <a href="https://thapat.me/archive" class="accent">the "archive" directory</a>. 
       </p>
       
       <Socials />
-      
+      <Webrings />
     </main>
   </body>
 </html>

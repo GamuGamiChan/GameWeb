@@ -3,28 +3,44 @@ import SocialLink from "../components/social-link.astro";
 import "@fortawesome/fontawesome-free/css/all.css";
 ---
 
-<section class="socials">
+<section class="socials border-top">
         <h2 class="accent">Find Me <span class="comment">DMs are open on IG</span></h2>
         <ul class="socials-list">
             <SocialLink 
-              icon="fa-discord"
+              icon="fa-brands fa-discord"
               platform="Discord"
               username="game11454"
               link="https://discord.com/users/577105513456730112"
             />
 
             <SocialLink
-              icon="fa-instagram"
+              icon="fa-brands fa-instagram"
               platform="Instagram"
               username="GamuGamiChan"
               link="https://instagram.com/GamuGamiChan"
             />
             
             <SocialLink
-              icon="fa-github"
+              icon="fa-brands fa-github"
               platform="GitHub"
               username="GamuGamiChan"
               link="https://github.com/GamuGamiChan"
             />
+
+            <SocialLink 
+              icon="fa-solid fa-envelope"
+              platform="Email (GPG signed)"
+              username="game@thapat.me"
+              link="mailto:game@thapat.me"
+            />
+
+            <SocialLink 
+              icon="fa-solid fa-globe"
+              platform="Other / GPG key (Keyoxide)"
+              username="Go to Keyoxide"
+              link="https://keyoxide.org/hkp/034C%C2%A0A526%C2%A0075A%C2%A026A3%C2%A067F1%C2%A0%C2%A0E87A%C2%A09FD7%C2%A0756B%C2%A0F994%C2%A0A79F"
+            />
+
+            <p class="comment">last updated: 20 Mar 2026</p>
         </ul> 
       </section>
