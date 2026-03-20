@@ -6,9 +6,12 @@ interface Props {
 }
 
 const { title, link, img } = Astro.props;
+const hasLink = typeof link === "string" && link.trim().length > 0;
+const label = typeof title === "string" && title.trim().length > 0 ? title : "88x31 button";
 ---
 
 <style>
+<!-- disable anti aliasing -->
 img {
     image-rendering: auto;
     image-rendering: crisp-edges;
@@ -17,6 +20,12 @@ img {
 }
 </style>
 
-<a href={link} title={title} rel="nofollow">
-    <img src={img} alt={title} width="88" height="31"/>
-</a>
+{
+    hasLink ? (
+        <a href={link} title={label} rel="nofollow">
+            <img src={img} alt={label} width="88" height="31"/>
+        </a>
+    ) : (
+        <img src={img} alt={label} width="88" height="31"/>
+    )
+}
