@@ -1,0 +1,24 @@
+---
+interface Props {
+  icon: string;
+  platform: string;
+  username: string;
+  link?: string;
+}
+
+const { icon, platform, username, link } = Astro.props;
+const hasLink = typeof link === "string" && link.trim().length > 0;
+---
+
+<li class="social-link-root">
+  <!-- Icon then name then link -->
+  <i class={`${icon}`}></i>
+  {platform}
+  {
+    hasLink ? (
+      <a href={link} class="accent social-link">{username}</a>
+    ) : (
+      <span class="accent">{username}</span>
+    )
+  }
+</li>
