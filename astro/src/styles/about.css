@@ -1,0 +1,106 @@
+:root {
+  --about-font: "Inter", "Avenir Next", "SF Pro Text", "Segoe UI", sans-serif;
+  --about-bg: #1e1e2e;
+  --about-card-bg: #313244;
+  --about-text: #cdd6f4;
+  --about-muted: #a6adc8;
+  --about-accent: #cba6f7;
+  --about-border: #45475a;
+  --about-width: 680px;
+  --about-radius: 12px;
+  --about-padding: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--about-font);
+  background: var(--about-bg);
+  color: var(--about-text);
+}
+
+
+.accent {
+    color: var(--about-accent)
+}
+
+.comment {
+    color: var(--about-muted);
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.about {
+  max-width: var(--about-width);
+  margin: 0 auto;
+  padding: var(--about-padding);
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 0.5rem 0 1rem;
+  line-height: 1.2;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+}
+
+.intro {
+  margin: 0 0 0.9rem;
+  color: var(--about-text);
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+
+.socials {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--about-border);
+}
+
+.socials h2 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+}
+
+.socials-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.social-link-root {
+  color: var(--about-text);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-link {
+  color: var(--about-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-link:hover {
+  opacity: 0.8;
+}
+
+.social-link i {
+  font-size: 1.1em;
+  width: 1.2em;
+  text-align: center;
+}

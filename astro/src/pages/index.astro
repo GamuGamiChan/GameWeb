@@ -1,11 +1,56 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/about.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game's Personal Site</title>
+  </head>
+  <body>
+    <main class="about">
+
+      <h1 class="accent">Hi, I'm Game</h1>
+      <p class="intro">I do random things on the internet.</p>
+      <p>
+        I'm a high school student that do random stuff that I think is fun.
+        You'll find me irl at school as the boy with the green/black glasses and a purple watch.
+      </p>
+      <p>
+        This site is very barebone so far, but I plan to add more content in the future, maybe? I have no idea.
+      </p>
+      <p>
+        If you're looking for the old website that I had before, you can find it on <a href="https://thapat.me/archive" class="accent">the "archive" directory</a>. Note that css and other stuff is fully borked if you are running local and I'm not planning to fix it, so enjoy the nostalgia of a 2010s pain and misery if your poking it :p
+      </p>
+      
+      <section class="socials">
+        <h2 class="accent">Find Me<p class="comment">DMs is open on IG</p></h2>
+        <ul class="socials-list">
+            <li class="social-link-root">
+                <!-- Icon then name then link -->
+                <i class="fab fa-discord"></i>
+                Discord
+                <a href="https://discord.com/users/577105513456730112" class="accent social-link">game11454</a>
+            </li>
+            
+            <li class="social-link-root">
+                <!-- Icon then name then link -->
+                <i class="fab fa-instagram"></i>
+                Instagram
+                <a href="https://instagram.com/GamuGamiChan" class="accent social-link">GamuGamiChan</a>
+            </li>
+
+            <li class="social-link-root">
+                <!-- Icon then name then link -->
+                <i class="fab fa-github"></i>
+                GitHub 
+                <a href="https://github.com/GamuGamiChan" class="accent social-link">GamuGamiChan</a>
+            </li>
+            
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
