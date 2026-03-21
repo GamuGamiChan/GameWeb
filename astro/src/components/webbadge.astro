@@ -8,6 +8,7 @@ interface Props {
 const { title, link, img } = Astro.props;
 const hasLink = typeof link === "string" && link.trim().length > 0;
 const label = typeof title === "string" && title.trim().length > 0 ? title : "88x31 button";
+import "../styles/webbadge.css";
 ---
 
 <style>
