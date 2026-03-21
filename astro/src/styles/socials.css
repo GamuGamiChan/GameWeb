@@ -15,32 +15,3 @@
   flex-direction: column;
   gap: 0.75rem;
 }
-
-.social-link-root {
-  color: var(--about-text);
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.social-link {
-  color: var(--about-accent);
-  text-decoration: none;
-  font-weight: 500;
-  transition: opacity 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.social-link:hover {
-  opacity: 0.8;
-}
-
-.social-link-root i {
-  font-size: 1.1em;
-  width: 1.2em;
-  text-align: center;
-}
