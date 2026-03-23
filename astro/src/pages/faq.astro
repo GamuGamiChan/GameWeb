@@ -1,0 +1,99 @@
+---
+import "../styles/index.css";
+import Navbar from "../components/navbar.astro";
+import FAQquestion from "../components/faq-question.astro";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+        name="description"
+        content="Game's personal site — projects, socials, and random internet stuff."
+        />
+        <meta property="og:title" content="Game's Personal Site" />
+        <meta property="og:description" content="Frequently Asked Questions" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://thapat.me/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <title>FAQs</title>
+  </head>
+  <body>
+
+    <Navbar />
+
+    <main class="about">
+      <h1 class="accent">Frequently Asked Questions</h1>
+
+      <h3>General</h3>
+
+      <FAQquestion>
+        <Fragment slot="question">Who are you?</Fragment>
+        <Fragment slot="answer">
+          <p>I'm Game, a high school student who likes doing random internet things.</p>
+          <p>This site is where I keep personal links and random stuff.</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">How old are you?</Fragment>
+        <Fragment slot="answer">
+            <p>Do the math. I'm born in April, 2011.</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">Can I DM you?</Fragment>
+        <Fragment slot="answer">
+          <p>You can message me on Signal or Instagram from the socials section. If possible, I recommend sending a message on Signal instead of IG.</p>
+          <p>If it's something formal, email is best.</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">Where is the old version of this site?</Fragment>
+        <Fragment slot="answer">
+          <p>You can view older versions in the archive directory.</p>
+          <p>Use this link: <a href="/archive" class="accent">thapat.me/archive</a>.</p>
+        </Fragment>
+      </FAQquestion>
+
+      <h3>Love Stuff</h3>
+
+      <FAQquestion>
+        <Fragment slot="question">Do You have a girlfriend?</Fragment>
+        <Fragment slot="answer">
+            <p>Not telling you.</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">What is your romantic orientation?</Fragment>
+        <Fragment slot="answer">
+            <p>Heteromantic Demiromantic. (Attracted to people of the opposite gender with strong emotional connections.)</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">What is your sexual orientation?</Fragment>
+        <Fragment slot="answer">
+            <p>Heterosexual Demisexual. (Attracted to people of the opposite gender with strong emotional connections.)</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">What your renai taichou? (Love interest)</Fragment>
+        <Fragment slot="answer">
+            <p>Caring girl who can stay up late, I think. I'm not telling everything.</p>
+        </Fragment>
+      </FAQquestion>
+
+      
+
+
+    </main>
+
+  </body>
+</html>
