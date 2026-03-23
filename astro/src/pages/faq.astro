@@ -27,7 +27,7 @@ import FAQquestion from "../components/faq-question.astro";
     <main class="about">
       <h1 class="accent">Frequently Asked Questions</h1>
 
-      <h3>General</h3>
+      <h3>Me</h3>
 
       <FAQquestion>
         <Fragment slot="question">Who are you?</Fragment>
@@ -53,6 +53,57 @@ import FAQquestion from "../components/faq-question.astro";
       </FAQquestion>
 
       <FAQquestion>
+        <Fragment slot="question">How do I send encrypted stuff to you?</Fragment>
+        <Fragment slot="answer">
+          <p><a href="https://keys.openpgp.org/vks/v1/by-fingerprint/034CA526075A26A367F1E87A9FD7756BF994A79F" class="accent" target="_blank">Use my GPG key.</a></p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">Why do you use a Thinkpad?</Fragment>
+        <Fragment slot="answer">
+          <p>Because I like it. It's reliable and also repairable and I'm not complaining</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">Why do you use Linux(Mint)?</Fragment>
+        <Fragment slot="answer">
+          <p>I like the control it gives to you on what you want to do. Also it a bit easier to do dev work on since it's more customizable. And also no microslop :3</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">Why the Thinkpad + Linux combo?</Fragment>
+        <Fragment slot="answer">
+          <p>Why not?</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">What food do you like?</Fragment>
+        <Fragment slot="answer">
+          <p>Anything I've eaten before and liked really. But I don't really try new stuff so it's annoying sometimes.</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">Can I rent your 3D printer?</Fragment>
+        <Fragment slot="answer">
+          <p>Yes, DM for pricing.</p>
+        </Fragment>
+      </FAQquestion>
+
+      <h3>Site</h3>
+
+      <FAQquestion>
+        <Fragment slot="question">Is there a Thai version?</Fragment>
+        <Fragment slot="answer">
+          <p>No. Transalate it if need be.</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
         <Fragment slot="question">Where is the old version of this site?</Fragment>
         <Fragment slot="answer">
           <p>You can view older versions in the archive directory.</p>
@@ -60,10 +111,47 @@ import FAQquestion from "../components/faq-question.astro";
         </Fragment>
       </FAQquestion>
 
+      <FAQquestion>
+        <Fragment slot="question">Where is the source code?</Fragment>
+        <Fragment slot="answer">
+          <p><a href="https://github.com/GamuGamiChan/GameWeb" class="accent" target="_blank">Here.</a></p>
+        </Fragment> 
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">Your code sucks.</Fragment>
+        <Fragment slot="answer">
+          <p>Send me a PR since I don't know what I'm doing.</p>
+        </Fragment> 
+      </FAQquestion>
+
+      <h3>Infra</h3>
+
+      <FAQquestion>
+        <Fragment slot="question">Is your server down?</Fragment>
+        <Fragment slot="answer">
+          <p><a href="https://status.thapat.me" class="accent" target="_blank">Check here.</a></p>
+        </Fragment> 
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">Why does your Pi 5 dies so much?</Fragment>
+        <Fragment slot="answer">
+          <p>I genuinely don't know. I hard reset it if it crashes but I'm not always on site so it's a bit of a pain.</p>
+        </Fragment> 
+      </FAQquestion>
+
       <h3>Love Stuff</h3>
 
       <FAQquestion>
-        <Fragment slot="question">Do You have a girlfriend?</Fragment>
+        <Fragment slot="question">Do you have a girlfriend?</Fragment>
+        <Fragment slot="answer">
+            <p>Not telling you.</p>
+        </Fragment>
+      </FAQquestion>
+
+      <FAQquestion>
+        <Fragment slot="question">Do you want a girlfriend?</Fragment>
         <Fragment slot="answer">
             <p>Not telling you.</p>
         </Fragment>
@@ -90,10 +178,6 @@ import FAQquestion from "../components/faq-question.astro";
         </Fragment>
       </FAQquestion>
 
-      
-
-
     </main>
-
   </body>
 </html>
