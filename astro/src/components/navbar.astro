@@ -1,0 +1,38 @@
+---
+import "../styles/navbar.css";
+---
+
+<nav class="site-nav border-bottom" aria-label="Primary">
+	<ul class="site-nav-links">
+		<li><a href="/">Home</a></li>
+	</ul>
+	<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">Dark</button>
+</nav>
+
+<script is:inline>
+	(() => {
+		const root = document.documentElement;
+		const button = document.getElementById("theme-toggle");
+		if (!button) return;
+
+		const applyTheme = (theme) => {
+			root.dataset.theme = theme;
+			button.textContent = theme === "dark" ? "Dark" : "Light";
+			button.setAttribute("aria-pressed", String(theme === "light"));
+		};
+
+		const storedTheme = localStorage.getItem("theme");
+		if (storedTheme === "light" || storedTheme === "dark") {
+			applyTheme(storedTheme);
+		} else {
+			const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+			applyTheme(prefersDark ? "dark" : "light");
+		}
+
+		button.addEventListener("click", () => {
+			const nextTheme = root.dataset.theme === "light" ? "dark" : "light";
+			applyTheme(nextTheme);
+			localStorage.setItem("theme", nextTheme);
+		});
+	})();
+</script>

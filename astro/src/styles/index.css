@@ -1,14 +1,23 @@
 :root {
   --about-font: "Inter", "Avenir Next", "SF Pro Text", "Segoe UI", sans-serif;
   --about-bg: #1e1e2e;
-  --about-card-bg: #313244;
   --about-text: #cdd6f4;
   --about-muted: #a6adc8;
   --about-accent: #cba6f7;
-  --about-border: #45475a;
+  --about-border: #6c7086;
   --about-width: 680px;
   --about-radius: 12px;
   --about-padding: 2rem;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --about-bg: #eff1f5;
+  --about-text: #4c4f69;
+  --about-muted: #6c6f85;
+  --about-accent: #8839ef;
+  --about-border: #9ca0b0;
+  color-scheme: light;
 }
 
 * {
@@ -20,6 +29,7 @@ body {
   font-family: var(--about-font);
   background: var(--about-bg);
   color: var(--about-text);
+  transition: background-color 160ms ease, color 160ms ease;
 }
 
 
