@@ -39,7 +39,7 @@ body {
 
 .comment {
     color: var(--about-muted);
-    font-size: 0.9em;
+    font-size: 1rem;
     font-style: italic;
 }
 

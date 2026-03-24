@@ -6,3 +6,10 @@
   flex-direction: column;
   gap: 0.75rem;
 }
+
+.webrings-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
