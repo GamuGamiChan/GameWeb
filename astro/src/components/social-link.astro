@@ -13,14 +13,16 @@ import "../styles/social-link.css";
 ---
 
 <li class="social-link-root">
-  <!-- Icon then name then link -->
-  <i class={`${icon}`}></i>
-  {platform}
-  {
-    hasLink ? (
-      <a href={link} class="accent social-link">{username}</a>
-    ) : (
-      <span class="accent">{username}</span>
-    )
-  }
+  <i class={icon} aria-hidden="true"></i>
+
+  <span class="social-link-text">
+    <span class="social-platform">{platform}</span>
+    {
+      hasLink ? (
+        <a href={link} class="accent social-link">{username}</a>
+      ) : (
+        <span class="accent social-link">{username}</span>
+      )
+    }
+  </span>
 </li>

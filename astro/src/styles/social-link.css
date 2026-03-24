@@ -3,7 +3,7 @@
   color: var(--about-text);
   text-decoration: none;
   font-weight: 500;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.5rem;
 }
@@ -14,7 +14,6 @@
   font-weight: 500;
   transition: opacity 0.2s ease;
   display: inline-flex;
-  align-items: center;
   gap: 0.5rem;
 }
 
@@ -24,6 +23,14 @@
 
 .social-link-root i {
   font-size: 1.1em;
-  width: 1.2em;
+  width: 1em;
   text-align: center;
 }
+
+/* Mobile styles */
+
+@media (max-width: 640px) {
+  .social-link {
+  display: flex;
+}
+} 
