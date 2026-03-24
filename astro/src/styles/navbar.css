@@ -18,6 +18,7 @@
 .site-nav-links a {
   color: var(--about-muted);
   text-decoration: none;
+  transition: color 0.25s ease-in-out;
 }
 
 .site-nav-links a:hover,
@@ -34,6 +35,7 @@
   font: inherit;
   line-height: 1;
   cursor: pointer;
+  transition: border-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .theme-toggle:hover,
