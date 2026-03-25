@@ -1,3 +1,8 @@
+.buttons-section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .buttons-list {
   list-style: none;
   margin: 0;
