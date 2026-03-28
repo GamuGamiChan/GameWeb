@@ -45,10 +45,10 @@
     color: var(--about-text);
 }
 
-.faq-answer :global(p) {
+.faq-answer p {
     margin: 0 0 0.75rem;
 }
 
-.faq-answer :global(p:last-child) {
+.faq-answer p:last-child {
     margin-bottom: 0;
 }
