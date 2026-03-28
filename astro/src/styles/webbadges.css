@@ -19,7 +19,7 @@
 }
 
 .buttons-list img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .buttons-list a:active img,

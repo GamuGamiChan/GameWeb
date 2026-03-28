@@ -1,5 +1,5 @@
 ---
-import FAQquestion from '../components/faq-question.astro';
+import FAQQuestion from '../components/faq-question.astro';
 import Navbar from '../components/navbar.astro';
 
 import '../styles/index.css';
@@ -26,10 +26,10 @@ import '../styles/index.css';
 
         <main class="about">
             <h1 class="accent">Do/Will not interact list.</h1>
-            <p>People listed here should not be interact with me at all. Everyone I've blocked online is also included but not listed.</p>
+            <p>People listed here should not interact with me at all. Everyone I've blocked online is also included but not listed.</p>
             <p>If you think you're listed here but not sure, assume you're listed anyways.</p>
 
-            <FAQquestion>
+            <FAQQuestion>
                 <Fragment slot="question">Basic DNI Criteria</Fragment>
                 <Fragment slot="answer">
                     <ul>
@@ -125,7 +125,7 @@ import '../styles/index.css';
 
                     <p>Adapted from <a href="https://basic-dni.crd.co/">https://basic-dni.crd.co/</a></p>
                 </Fragment>
-            </FAQquestion>
+            </FAQQuestion>
 
             <p>That's it really :p</p>
         </main>
