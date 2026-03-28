@@ -1,0 +1,134 @@
+---
+import FAQquestion from '../components/faq-question.astro';
+import Navbar from '../components/navbar.astro';
+
+import '../styles/index.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    name="description"
+    content="Game's personal site — projects, socials, and random internet stuff."
+    />
+    <meta property="og:title" content="Game's Personal Site" />
+    <meta property="og:description" content="People who should not interact with me." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thapat.me/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Do not interact.</title>
+  </head>
+    <body>
+        <Navbar />
+
+        <main class="about">
+            <h1 class="accent">Do/Will not interact list.</h1>
+            <p>People listed here should not be interact with me at all. Everyone I've blocked online is also included but not listed.</p>
+            <p>If you think you're listed here but not sure, assume you're listed anyways.</p>
+
+            <FAQquestion>
+                <Fragment slot="question">Basic DNI Criteria</Fragment>
+                <Fragment slot="answer">
+                    <ul>
+                        <li>racist
+                            <ul>
+                            <li>xenophobic</li>
+                            <li>sinophobic</li>
+                            <li>colorist</li>
+                            <li>orientalist</li>
+                            <li>anti blm</li>
+                            <li>anti black</li>
+                            <li>pro blue lives matter/alm</li>
+                            <li>anti stop asian hate</li>
+                            <li>you say slurs you can't reclaim</li>
+                            <li>you think people in racial minorities can't also be racist</li>
+                            <li>you think white people can be oppressed for being white</li>
+                            <li>etc</li>
+                            </ul>
+                        </li>
+                        <li>anti lgbtq+
+                            <ul>
+                            <li>homophobic, lesbiphobic, biphobic, panphobic, etc</li>
+                            <li>transphobic
+                                <ul>
+                                <li>transmed/truscum, radfem, terf</li>
+                                <li>anti neopronouns or xenogenders</li>
+                                <li>anti non-she/her lesbians or non-he/him gays</li>
+                                </ul>
+                            </li>
+                            <li>exclusionist</li>
+                            <li>radical inclusionist
+                                <ul>
+                                <li>pro all good faith identities</li>
+                                <li>pro mspec lesbians or gays</li>
+                                <li>pro amab trans men/afab trans women</li>
+                                <li>etc</li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </li>
+                        <li>islamophobic
+                            <ul>
+                            <li>anti face or head coverings</li>
+                            <li>etc</li>
+                            </ul>
+                        </li>
+                        <li>anti-semitic
+                            <ul>
+                            <li>nazi/nazi sympathizer</li>
+                            <li>german nationalism apologist</li>
+                            <li>japanese imperialism apologist</li>
+                            <li>etc</li>
+                            </ul>
+                        </li>
+                        <li>sexist
+                            <ul>
+                            <li>misogynistic</li>
+                            <li>transmisogynistic</li>
+                            <li>you think men can be oppressed for being men</li>
+                            </ul>
+                        </li>
+                        <li>ableist
+                            <ul>
+                            <li>you say the r slur</li>
+                            <li>anti self-diagnosis</li>
+                            <li>anti recovery</li>
+                            <li>pro endogenic systems</li>
+                            </ul>
+                        </li>
+                        <li>pro ship
+                            <ul>
+                            <li>anti anti, anti harassment, pro fiction, com ship, etc</li>
+                            <li>you ship illegal ships
+                                <ul>
+                                <li>incest, pedophilia, etc</li>
+                                </ul>
+                            </li>
+                            <li>you sexualize minors</li>
+                            <li>you fetishize lgbtq+ pairings</li>
+                            <li>you identify as a minor attracted person/pedophile</li>
+                            <li>you romanticize problematic tropes in media
+                                <ul>
+                                <li>mental illnesses</li>
+                                <li>self harm</li>
+                                <li>physical, sexual, or emotional abuse/assault</li>
+                                <li>rape</li>
+                                <li>other illegal or immoral tropes</li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p>Adapted from <a href="https://basic-dni.crd.co/">https://basic-dni.crd.co/</a></p>
+                </Fragment>
+            </FAQquestion>
+
+            <p>That's it really :p</p>
+        </main>
+
+    </body>
+</html>
