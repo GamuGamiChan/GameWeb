@@ -1,0 +1,14 @@
+---
+import "../styles/faq-question.css";
+---
+
+<details class="faq-item">
+	<summary>
+		<span class="faq-label" aria-hidden="true">▼</span>
+		<span class="faq-question"><slot name="question" /></span>
+	</summary>
+
+	<div class="faq-answer">
+		<slot name="answer" />
+	</div>
+</details>

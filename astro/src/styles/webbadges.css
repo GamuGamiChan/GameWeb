@@ -1,0 +1,28 @@
+.buttons-section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.buttons-list img {
+  image-rendering: pixelated;
+  transform: scale(1);
+  transition: transform 0.1s ease-in-out;
+}
+
+.buttons-list img:hover {
+  transform: scale(1.05);
+}
+
+.buttons-list a:active img,
+.buttons-list img:active {
+  transform: scale(1);
+}

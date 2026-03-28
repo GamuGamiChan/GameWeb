@@ -2,7 +2,7 @@
 import "../styles/index.css";
 import Socials from "../components/socials.astro";
 import WebBadges from "../components/webbadges.astro";
-import Webrings from "../components/webrings.astro";
+import Navbar from "../components/navbar.astro";
 ---
 
 <html lang="en">
@@ -22,6 +22,9 @@ import Webrings from "../components/webrings.astro";
     <title>Game's Personal Site</title>
   </head>
   <body>
+
+    <Navbar />
+
     <main class="about">
 
       <h1 class="accent">Hi, I'm Game</h1>
@@ -33,13 +36,9 @@ import Webrings from "../components/webrings.astro";
       <p>
         This site is very barebone so far, but I plan to add more content in the future, maybe? I have no idea.
       </p>
-      <p>
-        If you're looking for the old website that I had before, you can find it on <a href="https://thapat.me/archive" class="accent">the "archive" directory</a>. 
-      </p>
       
       <Socials />
       <WebBadges />
-      <Webrings />
     </main>
   </body>
 </html>
