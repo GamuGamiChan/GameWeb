@@ -118,7 +118,7 @@ import FAQQuestion from "../components/faq-question.astro";
       <FAQQuestion>
         <Fragment slot="question">Why do you block so many people?</Fragment>
         <Fragment slot="answer">
-          <p>I don't really like most people, they don't really match my personality most of the time .</p>
+          <p>I don't really like most people, they don't really match my personality most of the time.</p>
         </Fragment>
       </FAQQuestion>
 
@@ -178,8 +178,14 @@ import FAQQuestion from "../components/faq-question.astro";
         </Fragment>
       </FAQQuestion>
 
-
       <h3>Site</h3>
+
+      <FAQQuestion>
+        <Fragment slot="question">How often do you update this site?</Fragment>
+        <Fragment slot="answer">
+          <p>Whenever I feel like it, or when I have something new to show off. Could be years.</p>
+        </Fragment> 
+      </FAQQuestion>
 
       <FAQQuestion>
         <Fragment slot="question">Is there a Thai version?</Fragment>
@@ -191,9 +197,9 @@ import FAQQuestion from "../components/faq-question.astro";
       <FAQQuestion>
         <Fragment slot="question">Where is the old version of this site?</Fragment>
         <Fragment slot="answer">
-          <p>You can view older versions in the archive directory.</p>
+          <p>You can view old version in the archive directory. You'll likely get broken css.</p>
           <p>Use this link: <a href="/archive" class="accent">thapat.me/archive</a>.</p>
-        </Fragment>
+        </Fragment>de sucks.
       </FAQQuestion>
 
       <FAQQuestion>
@@ -210,6 +216,8 @@ import FAQQuestion from "../components/faq-question.astro";
         </Fragment> 
       </FAQQuestion>
 
+      
+
       <h3>Infra</h3>
 
       <FAQQuestion>
@@ -222,7 +230,8 @@ import FAQQuestion from "../components/faq-question.astro";
       <FAQQuestion>
         <Fragment slot="question">Why does your Pi 5 die so much?</Fragment>
         <Fragment slot="answer">
-          <p>I genuinely don't know. I hard reset it if it crashes but I'm not always on site so it's a bit of a pain.</p>
+          <p>Likely a power + networking issue. I've fixed it so it should not crash no more.</p>
+          <p><s>I genuinely don't know. I hard reset it if it crashes but I'm not always on site so it's a bit of a pain.</s></p>
         </Fragment> 
       </FAQQuestion>
 
